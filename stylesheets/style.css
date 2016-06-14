@@ -19,7 +19,7 @@ header{
   top: 0px;
   position: fixed;
   z-index: 100;
-  width: 100%;r
+  width: 100%;
 }
 
 @font-face {
@@ -35,25 +35,13 @@ body {
   overflow-x: hidden;
   font-family: baseFont,"Base Font",Helvetica,Arial,sans-serif;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 0.9;
   color: #333;
-
   background-color: white;
 
 }
 
-h1 {
-  margin: .67em 0;
-  font-size: 2em;
-}
 
-h4 {
-  font-size: 50px;
-}
-
-h6 {
-  font-size: 90px;
-}
 
 h1,
 h2,
@@ -61,64 +49,45 @@ h3,
 h4,
 h5,
 h6 {
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin: 0px;
-
 }
 
-.link-item{
+.link-category{
   transition: color 0.6s ease;
 }
 
-.link-item:hover{
+.link-category:hover{
   color: #0071bc;
   cursor: pointer;
 }
 
-#div-left, 
-#div-right{
+#div-main {
+  margin-top: 10%;
+  margin-left: 20%;
+  display: table;
 }
 
-#div-left {
-  text-align: right;
-  border-right-width: 2px;
-  border-right-color: black;
-  border-right-style: solid;
-  
-}
 
-#item-design,
-#item-engineering,
-#item-blog{
+
+#category-design,
+#category-engineering,
+#category-blog{
   margin-right: 0px;
 }
 
-#item-photo,
-#item-gregorio{
+#about-photo,
+#about-gregorio{
   margin-left: 0px;
 }
 
 
 #photo-profile {
-  height: 250px;
+  height: 18vw;
   padding-bottom: 20px;
-  
-  
 }
 
-/*#item-photo{
-  background: url(../img/perfil-bw.png);
-
-}
-
-#photo-profile:hover{
-  background: url(../img/perfil-color.png);
-
-}*/
-
-#div-middle {
-  margin-top: 10%;
-}
 
 img.grayscale {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
@@ -132,5 +101,97 @@ img.grayscale:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
+
+ /*For mobile phones:*/
+.section{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*float: right;*/
+    width: 100%;
+    text-align: right;
+
+
+}
+
+#section-categories {
+  display: table-footer-group;
+}
+
+#section-about{
+  display: table-header-group;
+  
+}
+
+#about-gregorio{
+  border-bottom-width: 2px;
+  padding-bottom: 5px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+
+}
+
+ #photo-profile {
+  height: 60vw;
+ }
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+h4 {
+    font-size: 8vw;
+}
+
+h5 {
+    font-size: 7vw;
+}
+
+h6 {
+    font-size: 15vw;
+}
+
+
+ /*For desktop: */
+@media only screen and (min-width: 768px) {
+    
+  .section{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+
+  #section-categories {
+  text-align: right;
+  border-right-width: 2px;
+  border-right-color: black;
+  border-right-style: solid;
+  }
+
+  #photo-profile {
+  height: 18vw;
+  padding-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  h5 {
+    font-size: 7vw;
+  }
+
+  h6 {
+    font-size: 8vw;
+  }
+
+}
+
+
 
 
