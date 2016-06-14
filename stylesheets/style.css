@@ -41,8 +41,6 @@ body {
 
 }
 
-
-
 h1,
 h2,
 h3,
@@ -63,30 +61,6 @@ h6 {
   cursor: pointer;
 }
 
-#div-main {
-  margin-top: 10%;
-  margin-left: 20%;
-  display: table;
-}
-
-
-
-#category-design,
-#category-engineering,
-#category-blog{
-  margin-right: 0px;
-}
-
-#about-photo,
-#about-gregorio{
-  margin-left: 0px;
-}
-
-
-#photo-profile {
-  height: 18vw;
-  padding-bottom: 20px;
-}
 
 
 img.grayscale {
@@ -102,17 +76,21 @@ img.grayscale:hover {
     -webkit-filter: grayscale(0%);
 }
 
- /*For mobile phones:*/
+/*For mobile phones: -----------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
 .section{
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    /*float: right;*/
     width: 100%;
     text-align: right;
+}
 
-
+#div-main {
+  margin-top: 10%;
+  margin-left: 20%;
+  display: table;
 }
 
 #section-categories {
@@ -132,9 +110,18 @@ img.grayscale:hover {
 
 }
 
- #photo-profile {
-  height: 60vw;
+#photo-profile {
+  height: 30vh;
+  padding-bottom: 20px;
  }
+
+#category-design,
+#category-engineering,
+#category-blog,
+#about-photo,
+#about-gregorio{
+  margin-right: 0px;
+}
 
 h1 {
   margin: .67em 0;
@@ -152,9 +139,10 @@ h5 {
 h6 {
     font-size: 15vw;
 }
+}
 
+/*For desktop: -----------------------------------------------------------------------------------------------------*/
 
- /*For desktop: */
 @media only screen and (min-width: 768px) {
     
   .section{
@@ -164,6 +152,10 @@ h6 {
     padding-left: 15px;
     float: left;
     width: 50%;
+  }
+  
+  #div-main {
+    margin-top: 10%;
   }
 
   #section-categories {
@@ -188,6 +180,12 @@ h6 {
 
   h6 {
     font-size: 8vw;
+  }
+
+  #about-photo,
+  #about-gregorio{
+    margin-left: 0px;
+    text-align: left;
   }
 
 }
