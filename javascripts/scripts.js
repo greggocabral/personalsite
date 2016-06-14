@@ -459,13 +459,28 @@ function renderCalendar(events){
 }
 
 
+function hideAll(){
+	$("#design-text").html('');
+	$("#engineering-text").html('');
+	$("#blog-text").html('');
+	$("#about-text").html('');
+}
+
+
+
+
 $(document).ready(function() {
 
-	
+	$("#section-about" ).click(function() {
+		hideAll();
+		$("#about-text").html('<h2> cabral.gr@gmail.com </h2>');
+	});	
 
-	showLogin();
+	$("#design-link" ).click(function() {
+		hideAll();
+		$("#design-text").html('<h2> blumornadesayunos.com </h2> <h2> plansandbreakfasts.com </h2> <h2> valpar.net </h2>');
+	});	
 
-	
 
 });
 

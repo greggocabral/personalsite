@@ -76,6 +76,11 @@ img.grayscale:hover {
     -webkit-filter: grayscale(0%);
 }
 
+.category-text{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) {
 .section{
@@ -96,19 +101,16 @@ img.grayscale:hover {
 
 
 #section-categories {
+  
   display: table-footer-group;
 }
 
 #section-about{
   display: table-header-group;
-  
 }
 
-#about-gregorio{
-  border-bottom-width: 2px;
+#about-fullname{
   padding-bottom: 5px;
-  border-bottom-color: black;
-  border-bottom-style: solid;
 
 }
 
@@ -116,6 +118,14 @@ img.grayscale:hover {
   height: 30vh;
   padding-bottom: 20px;
  }
+
+
+#category-design{
+  border-top-width: 2px;
+  border-top-color: black;
+  border-top-style: solid;
+}
+
 
 #category-design,
 #category-engineering,
@@ -128,6 +138,10 @@ img.grayscale:hover {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+}
+
+h3 {
+    font-size: 3vh;
 }
 
 h4 {
@@ -171,6 +185,10 @@ h6 {
   height: 18vw;
   padding-bottom: 20px;
   }
+
+  h3 {
+    font-size: 2vh;
+}
 
   h4 {
     font-size: 4vw;
