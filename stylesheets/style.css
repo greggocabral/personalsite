@@ -81,6 +81,10 @@ img.grayscale:hover {
   margin-bottom: 10px;
 }
 
+#about-photo{
+  visibility: hidden;
+}
+
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) {
 .section{
@@ -129,9 +133,9 @@ img.grayscale:hover {
 
 #category-design,
 #category-engineering,
-#category-blog,
+#category-other,
 #about-photo,
-#about-gregorio{
+#about-fullname{
   margin-right: 0px;
 }
 
@@ -203,7 +207,7 @@ h6 {
   }
 
   #about-photo,
-  #about-gregorio{
+  #about-fullname{
     margin-left: 0px;
     text-align: left;
   }
