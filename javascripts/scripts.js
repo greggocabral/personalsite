@@ -473,12 +473,12 @@ $(document).ready(function() {
 
 	$("#section-about" ).click(function() {
 		hideAll();
-		$("#about-text").html('<h2> cabral.gr@gmail.com </h2>');
+		$("#about-text").html('<h2> cabral.gr@gmail.com </h2> <h2> +61 435 759 709 </h2> <h2><a href="https://ar.linkedin.com/in/gregorio-cabral-14957465" style="color: #3b5998"> linkedin </a> </h2>  ');
 	});	
 
 	$("#design-link" ).click(function() {
 		hideAll();
-		$("#design-text").html('<h2> blumornadesayunos.com </h2> <h2> plansandbreakfasts.com </h2> <h2> valpar.net </h2>');
+		$("#design-text").html('<h2> blumornadesayunos.com </h2> <h2> plansandbreakfasts.com </h2> <h2> valpar.net </h2> ');
 	});	
 
 
