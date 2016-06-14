@@ -77,7 +77,7 @@ img.grayscale:hover {
 }
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
 .section{
     position: relative;
     min-height: 1px;
@@ -89,9 +89,11 @@ img.grayscale:hover {
 
 #div-main {
   margin-top: 10%;
-  margin-left: 20%;
   display: table;
+  float: right;
+  margin-right: 5%;
 }
+
 
 #section-categories {
   display: table-footer-group;
@@ -129,21 +131,21 @@ h1 {
 }
 
 h4 {
-    font-size: 8vw;
+    font-size: 5vh;
 }
 
 h5 {
-    font-size: 7vw;
+    font-size: 8vh;
 }
 
 h6 {
-    font-size: 15vw;
+    font-size: 9vh;
 }
 }
 
 /*For desktop: -----------------------------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
     
   .section{
     position: relative;
