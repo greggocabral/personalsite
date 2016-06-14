@@ -22,11 +22,18 @@ header{
   width: 100%;r
 }
 
+@font-face {
+  font-family: baseFont;
+  src: local("Base Font"),
+       local("Base Font"),
+       url(fonts/MyriadPro-Regular.ttf);
+  font-weight: bold;
+}
 
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: baseFont,"Base Font",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -55,7 +62,6 @@ h4,
 h5,
 h6 {
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: MYRIADPRO-REGULAR,"MYRIADPRO-REGULAR",Helvetica,Arial,sans-serif;
     margin: 0px;
 
 }
