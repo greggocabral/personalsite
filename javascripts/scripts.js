@@ -482,7 +482,9 @@ $(document).ready(function() {
 
 			aboutPhotoHeight = $('#about-photo').css("height");
 			$("#photo-profile").css('height', '15vh');
-			$("#about-text").hide().html('<h1> <p>Hi! I am a designer and full stack web developer from Buenos Aires, Argentina. </p> <p>Currently in the Australian East Coast and available for hire or freelance contracts. So get in touch!</p></h1> \
+			$("#about-text").hide().html('<h1><p>Hi! I am a full stack web developer and designer from Buenos Aires, Argentina. <br>\
+												 Currently in the Australian East Coast and available for hire or freelance contracts. <br>\
+												  So get in touch! </p> </h1> \
 										 <h2> <i class="fa fa-envelope" aria-hidden="true"></i> cabral.gr@gmail.com </h2> \
 										 <h2> <i class="fa fa-phone-square" aria-hidden="true"></i> +61 435 759 709 </h2> \
 										 <h2><a href="https://ar.linkedin.com/in/gregorio-cabral-14957465"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> Gregorio Cabral </a> </h2>  ').fadeIn(1000);
@@ -493,7 +495,9 @@ $(document).ready(function() {
 	$("#design-link" ).click(function() {
 		if (state!= 'design'){
 			hideAll();
-			$("#design-text").hide().html('<h2>blumornadesayunos.com </h2> <h2> plansandbreakfasts.com </h2> <h2> valpar.net </h2> ').fadeIn(1000);
+			$("#design-text").hide().html('<h2> <a href="http://blumornadesayunos.com"> blumornadesayunos.com </a></h2> \
+											<h2> <a href="http://www.plansandbreakfast.com"> plansandbreakfast.com </a></h2> \
+											<h2> valpar.net </h2> ').fadeIn(1000);
 			state = 'design';
 		}
 	});	
