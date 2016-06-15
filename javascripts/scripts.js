@@ -460,6 +460,7 @@ function renderCalendar(events){
 
 
 function hideAll(){
+	$("#photo-profile").css('height', aboutPhotoHeight);
 	$("#design-text").html('');
 	$("#engineering-text").html('');
 	$("#other-text").html('');
@@ -467,6 +468,8 @@ function hideAll(){
 }
 
 
+var aboutPhotoHeight;
+var state;
 
 
 $(document).ready(function() {
@@ -474,23 +477,42 @@ $(document).ready(function() {
 	$('#about-photo').hide().css('visibility', 'visible').fadeIn(1000);
 
 	$("#section-about" ).click(function() {
-		hideAll();
-		$("#about-text").html('<h2> cabral.gr@gmail.com </h2> <h2> +61 435 759 709 </h2> <h2><a href="https://ar.linkedin.com/in/gregorio-cabral-14957465" style="color: #3b5998"> linkedin </a> </h2>  ');
+		if (state!= 'about'){
+			hideAll();
+
+			aboutPhotoHeight = $('#about-photo').css("height");
+			$("#photo-profile").css('height', '15vh');
+			$("#about-text").hide().html('<h1> <p>Hi! I am a designer and full stack web developer from Buenos Aires, Argentina. </p> <p>Currently in the Australian East Coast and available for hire or freelance contracts. So get in touch!</p></h1> \
+										 <h2> <i class="fa fa-envelope" aria-hidden="true"></i> cabral.gr@gmail.com </h2> \
+										 <h2> <i class="fa fa-phone-square" aria-hidden="true"></i> +61 435 759 709 </h2> \
+										 <h2><a href="https://ar.linkedin.com/in/gregorio-cabral-14957465"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> Gregorio Cabral </a> </h2>  ').fadeIn(1000);
+			state = 'about';
+		}
 	});	
 
 	$("#design-link" ).click(function() {
-		hideAll();
-		$("#design-text").html('<h2> <i>static website - </i> blumornadesayunos.com </h2> <h2> <i>web app - </i> plansandbreakfasts.com </h2> <h2> <i>web app - </i> valpar.net </h2> ');
+		if (state!= 'design'){
+			hideAll();
+			$("#design-text").hide().html('<h2>blumornadesayunos.com </h2> <h2> plansandbreakfasts.com </h2> <h2> valpar.net </h2> ').fadeIn(1000);
+			state = 'design';
+		}
 	});	
 
 	$("#engineering-link" ).click(function() {
-		hideAll();
-		$("#engineering-text").html('<h2> Computational Fluid Dynamics </h2> <h2> Finite Element Analysis </h2> <h2> Computer Assisted Design </h2> ');
+		if (state!= 'engineering'){
+			hideAll();
+			$("#engineering-text").hide().html('<h2> Computational Fluid Dynamics </h2> <h2> Finite Element Analysis </h2> <h2> Computer Assisted Design </h2> ').fadeIn(1000);
+			state = 'engineering';
+		}
 	});	
 
 	$("#other-link" ).click(function() {
-		hideAll();
-		$("#other-text").hide().html('<h2> photography </h2> <h2> languages </h2> <h2> thoughts </h2>').fadeIn(1000);
+		if (state!= 'other'){
+			hideAll();
+			$("#other-text").hide().html('<h2> photography </h2> <h2> languages </h2> <h2> thoughts </h2>').fadeIn(1000);
+			state = 'other';
+		}
+		
 	});	
 	
 
