@@ -458,21 +458,36 @@ function renderCalendar(events){
 
 }
 
+// acorddion
+
 
 function hideAll(){
-	$("#photo-profile").css('height', aboutPhotoHeight);
-	$("#design-text").html('');
-	$("#engineering-text").html('');
-	$("#other-text").html('');
-	$("#about-text").html('');
+	
+	$("#design-text").slideUp( slideSpeed, function() {
+			  });
+	$("#engineering-text").slideUp( slideSpeed, function() {
+			    // Animation complete.
+			  });
+	$("#other-text").slideUp( slideSpeed, function() {
+			    // Animation complete.
+			  });;
+	$("#about-text").slideUp( 800, function() {
+				
+			    // Animation complete.
+			  });
+
+	 $("#photo-profile").animate({height: aboutPhotoHeight});
 }
 
 
 var aboutPhotoHeight;
 var state;
+var slideSpeed = slideSpeed;
 
 
 $(document).ready(function() {
+
+	// hideAll();
 
 	$('#about-photo').hide().css('visibility', 'visible').fadeIn(1000);
 
@@ -481,13 +496,16 @@ $(document).ready(function() {
 			hideAll();
 
 			aboutPhotoHeight = $('#about-photo').css("height");
-			$("#photo-profile").css('height', '15vh');
+			$("#photo-profile").animate({height: '15vh'});
+
 			$("#about-text").hide().html('<h1><p>Hi! I am a full stack web developer and designer from Buenos Aires, Argentina. <br>\
 												 Currently in the Australian East Coast and available for hire or freelance contracts. <br>\
 												  So get in touch! </p> </h1> \
 										 <h2> <i class="fa fa-envelope" aria-hidden="true"></i> cabral.gr@gmail.com </h2> \
 										 <h2> <i class="fa fa-phone-square" aria-hidden="true"></i> +61 435 759 709 </h2> \
-										 <h2><a href="https://ar.linkedin.com/in/gregorio-cabral-14957465"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> Gregorio Cabral </a> </h2>  ').fadeIn(1000);
+										 <h2><a href="https://ar.linkedin.com/in/gregorio-cabral-14957465"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> Gregorio Cabral </a> </h2>  ').slideDown( 800, function() {
+			    // Animation complete.
+			  });;
 			state = 'about';
 		}
 	});	
@@ -495,9 +513,11 @@ $(document).ready(function() {
 	$("#design-link" ).click(function() {
 		if (state!= 'design'){
 			hideAll();
-			$("#design-text").hide().html('<h2> <a href="http://blumornadesayunos.com"> blumornadesayunos.com </a></h2> \
-											<h2> <a href="http://www.plansandbreakfast.com"> plansandbreakfast.com </a></h2> \
-											<h2> valpar.net </h2> ').fadeIn(1000);
+			$("#design-text").html(' <h2> <a href="http://blumornadesayunos.com"> blumornadesayunos.com </a></h2> \
+                            <h2> <a href="http://www.plansandbreakfast.com"> plansandbreakfast.com </a></h2>  \
+                            <h2> valpar.net </h2>').slideDown( slideSpeed, function() {
+			    // Animation complete.
+			  });
 			state = 'design';
 		}
 	});	
@@ -505,7 +525,11 @@ $(document).ready(function() {
 	$("#engineering-link" ).click(function() {
 		if (state!= 'engineering'){
 			hideAll();
-			$("#engineering-text").hide().html('<h2> Computational Fluid Dynamics </h2> <h2> Finite Element Analysis </h2> <h2> Computer Assisted Design </h2> ').fadeIn(1000);
+			$("#engineering-text").html( '<h2> Computational Fluid Dynamics </h2> \
+                            <h2> Finite Element Analysis </h2> \
+                            <h2> Computer Assisted Design </h2>').slideDown( slideSpeed, function() {
+			    // Animation complete.
+			  });
 			state = 'engineering';
 		}
 	});	
@@ -513,15 +537,21 @@ $(document).ready(function() {
 	$("#other-link" ).click(function() {
 		if (state!= 'other'){
 			hideAll();
-			$("#other-text").hide().html('<h2> photography </h2> <h2> languages </h2> <h2> thoughts </h2>').fadeIn(1000);
+			$("#other-text").html('<h2> Computational Fluid Dynamics </h2> \
+                            <h2> Finite Element Analysis </h2> \
+                            <h2> Computer Assisted Design </h2>').slideDown( slideSpeed, function() {
+			    // Animation complete.
+			  });
 			state = 'other';
 		}
 		
 	});	
+
 	
 
 
 });
+
 
 
 
