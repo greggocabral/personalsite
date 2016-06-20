@@ -89,80 +89,85 @@ a:hover{
     -webkit-filter: grayscale(0%);
 }
 
+#about-text{
+  visibility: hide;
+}
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) {
-.section{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-    text-align: right;
-}
+  .section{
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 100%;
+      text-align: right;
+  }
 
-#div-main {
-  margin-top: 10%;
-  display: table;
-  float: right;
-  margin-right: 5%;
-}
-
-
-#section-categories {
-  
-  display: table-footer-group;
-}
-
-#section-about{
-  display: table-header-group;
-}
-
-#about-fullname{
-  padding-bottom: 5px;
-
-}
-
-#photo-profile {
-  height: 30vh;
-  padding-bottom: 20px;
- }
+  #div-main {
+    margin-top: 10%;
+    display: table;
+    float: right;
+    margin-right: 5%;
+  }
 
 
-#category-design{
-  border-top-width: 2px;
-  border-top-color: black;
-  border-top-style: solid;
-}
+  #section-categories {
+    
+    display: table-footer-group;
+  }
+
+  #section-about{
+    display: table-header-group;
+  }
+
+  #about-fullname{
+    padding-bottom: 5px;
+
+  }
+
+  #photo-profile {
+    height: 30vh;
+    padding-bottom: 20px;
+   }
 
 
-#category-design,
-#category-engineering,
-#category-other,
-#about-photo,
-#about-fullname{
-  margin-right: 0px;
-}
+  #category-design{
+    border-top-width: 2px;
+    border-top-color: black;
+    border-top-style: solid;
+    padding-top: 10px;
+  }
 
-h1 {
-  font-size: 3vh;
-}
 
-h3 {
+  #category-design,
+  #category-engineering,
+  #category-other,
+  #about-photo,
+  #about-fullname{
+    margin-right: 0px;
+  }
+
+  h1 {
     font-size: 3vh;
-}
+  }
 
-h4 {
-    font-size: 5vh;
-}
+  h3 {
+      font-size: 3vh;
+  }
 
-h5 {
-    font-size: 8vh;
-}
+  h4 {
+      font-size: 5vh;
+  }
 
-h6 {
-    font-size: 9vh;
-}
+  h5 {
+      font-size: 8vh;
+  }
+
+  h6 {
+      font-size: 9vh;
+  }
+
 }
 
 /*For desktop: -----------------------------------------------------------------------------------------------------*/
