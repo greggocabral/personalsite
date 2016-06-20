@@ -100,15 +100,15 @@ a:hover{
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px;
-      width: 100%;
       text-align: right;
   }
 
   #div-main {
-    margin-top: 10%;
+    margin-top: 5%;
     display: table;
     float: right;
     margin-right: 5%;
+    margin-left: 25%;
   }
 
 
@@ -173,7 +173,11 @@ a:hover{
 /*For desktop: -----------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 400px) {
-    
+   
+  .container{
+    overflow: hidden;
+  }  
+
   .section{
     position: relative;
     min-height: 1px;
@@ -181,10 +185,12 @@ a:hover{
     padding-left: 15px;
     float: left;
     width: 50%;
+    padding-bottom: 20010px;  /* X + padding-bottom */
+    margin-bottom: -20000px;  /* X */
   }
   
   #div-main {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   #section-categories {

@@ -2,22 +2,13 @@
 
 function hideAll(){
 	
-	$("#design-text").slideUp( slideSpeed, function() {
-			  });
-	$("#engineering-text").slideUp( slideSpeed, function() {
+	$(".category-text").slideUp( slideSpeed, function() {
 			    // Animation complete.
 			  });
-	$("#other-text").slideUp( slideSpeed, function() {
-			    // Animation complete.
-			  });;
-	$("#about-text").slideUp( 800, function() {
-			    // Animation complete.
-			  });
-	 $("#photo-profile").animate({height: aboutPhotoHeight});
+
 }
 
 
-var aboutPhotoHeight;
 var state;
 var slideSpeed = 600;
 
@@ -28,19 +19,27 @@ $(document).ready(function() {
 
 	$('#about-photo').hide().css('visibility', 'visible').fadeIn(1000);
 
+
+
 	$("#section-about" ).click(function() {
 		if (state!= 'about'){
 			hideAll();
-
-			aboutPhotoHeight = $('#about-photo').css("height");
-			$("#photo-profile").animate({height: '15vh'});
-			$("#about-text").slideDown( 800, function() {
-			    // Animation complete.
+			$("#about-text").slideDown( 400, function() {
 			  });
-
 			state = 'about';
 		}
 	});	
+
+	$(".link-category" ).click(function() {
+		if (state!= 'design'){
+			hideAll();
+			$(this).slideDown(slideSpeed, function() {
+			    // Animation complete.
+			  });
+			state = 'design';
+		}
+	});	
+
 
 	$("#design-link" ).click(function() {
 		if (state!= 'design'){
