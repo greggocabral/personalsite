@@ -30,15 +30,15 @@ $(document).ready(function() {
 		}
 	});	
 
-	$(".link-category" ).click(function() {
-		if (state!= 'design'){
-			hideAll();
-			$(this).slideDown(slideSpeed, function() {
-			    // Animation complete.
-			  });
-			state = 'design';
-		}
-	});	
+	// $(".link-category" ).click(function() {
+	// 	if (state!= 'design'){
+	// 		hideAll();
+	// 		$(this ).slideDown(slideSpeed, function() {
+	// 		    // Animation complete.
+	// 		  });
+	// 		state = 'design';
+	// 	}
+	// });	
 
 
 	$("#design-link" ).click(function() {
