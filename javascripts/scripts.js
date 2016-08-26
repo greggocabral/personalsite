@@ -9,6 +9,11 @@ $(document).ready(function() {
 
 	$('#about-photo').hide().css('visibility', 'visible').fadeIn(1000);
 
+	$.getJSON('descriptions.json', function(descriptions){
+		console.log(descriptions);
+	});
+
+
 	$(".link-category" ).click(function() { 
 	 		
 	 		$(".category-text").slideUp(slideSpeed);
@@ -19,8 +24,7 @@ $(document).ready(function() {
 
 	$(".link-sub-category" ).click(function() { 
 	 		
-	 		
-	 		$(".sub-category-text").slideUp(slideSpeed);
+		$(".sub-category-text").slideUp(slideSpeed);
 
 	 		$(this).next().slideDown(slideSpeed);
 	});	

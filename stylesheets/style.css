@@ -59,13 +59,15 @@ a{
 
 
 .link-category, 
-.link-sub-category{
+.link-sub-category,
+.link{
   transition: color 0.6s ease;
 }
 
 .link-category:hover,
 .link-sub-category:hover,
-a:hover{
+a:hover,
+.link:hover{
   color: #0071bc;
   cursor: pointer;
 }
@@ -94,6 +96,52 @@ a:hover{
 #about-text{
   visibility: hide;
 }
+
+.project-panel{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+ .symbol-close{
+    margin-left: 95%;
+    margin-top:20px;
+    font-size: 4vw;
+    width: 5%;
+
+ }
+
+ .project-title{
+    text-align: center;
+ }
+
+
+.animate-show {
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+}
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+.check-element {
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+}
+
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 400px) {
@@ -176,6 +224,8 @@ a:hover{
 
 }
 
+
+
 /*For desktop: -----------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 400px) {
@@ -240,6 +290,7 @@ a:hover{
     margin-left: 0px;
     text-align: left;
   }
+
 
 }
 
