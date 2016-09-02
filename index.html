@@ -13,13 +13,9 @@
 
     <!-- JavaScript -->
     <script src="javascripts/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="javascripts/moment.min.js"></script>
     <script src="javascripts/scripts.js"></script>
+    <script src="javascripts/data.js"></script>
 
-    <script type="text/javascript" src="javascripts/angular.min.js"></script>
-    <script type="text/javascript" src="javascripts/app.js"></script>
-
-    
 
     <!-- CSS -->
     <link href="stylesheets/style.css" rel="stylesheet">
@@ -53,17 +49,19 @@
                     <!-- ------------ DESIGN ------------------- -->
 
                     <div id="category-design"> 
-                        <h6 id="design-link" class="link-category">design</h6>
+                        <h6 id="design-link" class="link-category">web</h6>
                         <div id='design-text' class="category-text">
                             <h3 class="link-sub-category"> static websites </h3>
                             <div id="staticweb-list" class="sub-category-text">
-                                <h2> <a href="http://blumornadesayunos.com"> blumornadesayunos.com  </a></h2> 
-                                <h2> <a href="http://www.chrisburtonart.com"> chrisburtonart.com </a></h2> 
+                                <h2> <div id='blumornadesayunoscom' class='project link'> blumornadesayunos.com  </div></h2> 
+                                <h2> <div id='chrisburtonartcom' class='project link'> chrisburtonart.com </div></h2> 
+                                <h2> <div id='gregoriocabralme' class='project link'> gregoriocabral.me </div></h2>
                             </div>
                             <h3 class="link-sub-category"> web apps </h3>
                             <div id="webapps-list" class="sub-category-text">
-                                <h2> <a href="http://www.plansandbreakfast.com"> plansandbreakfast.com </a></h2>  
-                                <h2> valpar.net </h2>
+                                <h2> <div id='plansandbreakfastcom' class='project link'> plansandbreakfast.com </div></h2> 
+                                <h2> <div id='valparnet' class='project link'> valpar.net</div></h2> 
+                                
                             </div>
                             
                         </div>  
@@ -75,22 +73,43 @@
                         <h6 id="engineering-link" class="link-category">engineering</h6>
                         <div id='engineering-text' class="category-text">
                             <h3 class="link-sub-category"> Computational Fluid Dynamics </h3> 
+                            <div class="sub-category-text">
+                                <h2> <div id='openfoamsolver' class='project link'>OpenFoam CFD Solver in AWS</div></h2> 
+                            </div>
+
                             <h3 class="link-sub-category"> Finite Element Analysis </h3> 
-                            <h3 class="link-sub-category"> Computer Assisted Design </h3>
+                            <div class="sub-category-text">
+                                <h2> <div id='windturbinedesign' class='project link'> structural design of composite wind turbine blades</div></h2> 
+                            </div>
+
+                            <h3 class="link-sub-category"> Computer Assisted Design </h3> 
+                            <div class="sub-category-text">
+                                <h2> <div id='campervandesign' class='project link'>design of a campervan</div></h2> 
+                            </div>
+
                         </div> 
                         
                     </div>
 
                     <!-- ------------ OTHER ------------------- -->
-
-                    <div id="category-other">
+                    
+                     <div id="category-other">
                         <h6 id="other-link" class="link-category">other</h6>
                         <div id='other-text' class="category-text">
-                            <h3> photography </h3> 
-                            <h3> language learning </h3> 
-                            <h3> thoughts </h3>
+                            <h3 class="link-sub-category"> photography </h3> 
+                            <div class="sub-category-text">
+                                <h2> <div id='happymondaytravel' class='project link'>happy monday travel</div></h2> 
+                            </div>
+
+                            <h3 class="link-sub-category"> thoughts </h3> 
+                            <div class="sub-category-text">
+                                <h2> <div id='languagelearning' class='project link'>language learning</div></h2> 
+                            </div>
+
                         </div> 
+                        
                     </div>
+
                 </div>
 
     <!-- ------------SECTION PERSONAL DESCRIPTION ------------------- -->                
@@ -105,7 +124,7 @@
                     <div id='about-text' class="category-text">
                         <h2 style="margin-bottom:5px">
                             Hi! I am a full stack web developer and designer from Buenos Aires, Argentina. <br>
-                            Currently in the Sydney and available for hire or freelance contracts. <br>
+                            Currently in Sydney and available for hire or freelance contracts. <br>
                             So get in touch! 
                         </h2> 
                         <h2> <i class="fa fa-envelope" aria-hidden="true"></i> cabral.gr@gmail.com </h2> 
@@ -114,26 +133,28 @@
                     </div>
                 </div>   
 
+
     <!-- ------------SECTION PROJECTS ------------------- -->
-<!-- 
+
                <div class="project-panel">
                     <div class="row">
                         <div class="symbol-close link">
-                            <i class="fa fa-times-circle" aria-hidden="true"></i> 
+                            <i class="fa fa-times-circle" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="project-title row"> 
-                            <h6>blumornadesayunos.com</h6>
+                            <h6 id='project-title'></h6>
+                    </div>
+                    <div class="row">
+                        <div class='project-col'> 
+                            <div id='project-img'></div>
                         </div>
+                        <div class='project-col project-text'> 
+                            <p><h3 id='project-description'></h3></p>     
+                            <p> <h3 id='project-link'></h3> </p> 
+                        </div> 
                     </div>
-                    <div class="project-images row"> 
-
-                    </div>
-                    <div class="project-text row">
-                        Static website for a small argentinean website 
-                    </div>    
-                </div>   -->
+                </div>   
             
         </div>
 
