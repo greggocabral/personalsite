@@ -79,8 +79,8 @@ a:hover,
 
 
 .category-text{
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
   line-height: 1.2;
 }
 
@@ -218,19 +218,23 @@ a:hover,
   }
 
   h1 {
-    font-size: 2vh;
+    /*font-size: 2vh;*/
+    font-size: 10px;
   }
 
   h2 {
-      font-size: 3vh;
+      /*font-size: 3vh;*/
+      font-size: 15px;
   }
 
   h3 {
-      font-size: 3.5vh;
+      /*font-size: 3.5vh;*/
+      font-size: 22px;
   }
 
   h4 {
-      font-size: 5vh;
+      font-size: 30px;
+      /*font-size: 5vh;*/
   }
 
   h5 {
@@ -238,7 +242,8 @@ a:hover,
   }
 
   h6 {
-      font-size: 9vh;
+      font-size: 50px;
+      /*font-size: 9vh;*/
   }
 
 }
@@ -284,7 +289,7 @@ a:hover,
   }
 
   #photo-profile {
-  height: 18vw;
+  height: 192px;
   padding-bottom: 20px;
   }
 

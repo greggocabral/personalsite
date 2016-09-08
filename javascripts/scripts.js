@@ -47,9 +47,12 @@ $(document).ready(function() {
 
 	$(".symbol-close" ).click(function() { 
 
-		$(".project-panel").animate({'margin-left': '-100%'},slideSpeed);
+		$(".project-panel").animate({'margin-left': '-100%'},slideSpeed,function() {
+			showProject('dummy');
+		    
+		});
 
-		showProject('dummy');
+		
 	 		
 	});
 
