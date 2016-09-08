@@ -1,5 +1,12 @@
 var projects = [
 	{
+		'id': 'dummy',
+		'title': '',
+		'description': '',
+		'link': '',
+		'img': ''
+	},
+	{
 		'id': 'blumornadesayunoscom',
 		'title': 'Blumorna Desayunos',
 		'description': '<p>Single page static website, developed for a small argentinean company that delivers homemade breakfast.</p><p> The job involved helping the business owners to pick a name for the brand, designing their logo design, and building and hosting the website. </p><p> The technologies employed include Bootstrap, HTML and CSS. The logo design was done in Illustrator.</p>',
