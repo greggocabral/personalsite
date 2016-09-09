@@ -238,7 +238,8 @@ a:hover,
   }
 
   h5 {
-      font-size: 8vh;
+      font-size: 40px;
+      /*font-size: 8vh;*/
   }
 
   h6 {
@@ -272,7 +273,6 @@ a:hover,
   .project-col{
     max-width: 60%;
     float: left;
-    /*padding-left: 20px;*/
     padding-right: 20px;
     padding-top: 40px;
   }
