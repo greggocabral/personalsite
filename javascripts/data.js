@@ -50,22 +50,22 @@ var projects = [
 	}, 
 	{
 		'id': 'campervandesign',
-		'title': 'Design of a campervan',
-		'description': '<p>Interior design of a campervan.</p>',
+		'title': 'Campervan Prototype',
+		'description': '<p>Vuelta de Byron is a prototype of campervan. It is meant to be built adding custom design furniture and components to the interior of the van to be renovated. The idea is that this furniture is designed in such a way that it can be easily assembled from laser cut wood pieces, without the need of advanced carpenter skills nor much cutting or fitting labour. </p>',
 		'link': '',
 		'img': ''
 	}, 
 	{
 		'id': 'happymondaytravel',
 		'title': 'Happy Monday Travel',
-		'description': '<p>Compilation of my best travel photographs.</p>',
+		'description': '<p>Happy Monday Travel is a photography blog featuring my best travel photographs.</p>',
 		'link': '',
 		'img': ''
 	}, 
 	{
 		'id': 'languagelearning',
 		'title': 'Language learning',
-		'description': '<p> Valpar.net is a time efficient language learning platform, targeting word prioritization, spaced repeticion method and fast feedback loops. </p> <p>Not developed yet.</p> ',
+		'description': '<p>Valpar.net is a time efficient language learning platform, targeting word prioritization, spaced repeticion method and fast feedback loops. </p> ',
 		'link': '',
 		'img': ''
 	}
