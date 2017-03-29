@@ -51,9 +51,7 @@ $(document).ready(function() {
 			showProject('dummy');
 		    
 		});
-
-		
-	 		
+		 		
 	});
 
 	$(".project" ).click(function() { 
