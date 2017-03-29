@@ -9,7 +9,6 @@ function showProject(projectSelectedId){
 		});
 
 		$('#project-title').html(project[0].title);
-		console.log(project[0].img);
 		if(project[0].img != undefined){
 			$('#project-img').html('<img class="project-img" src="'+project[0].img+'">');
 		} 

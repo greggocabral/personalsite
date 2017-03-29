@@ -28,6 +28,48 @@ var projects = [
 		'img': './img/plansandbreakfast.png'
 	}, 
 	{
+		'id': 'randomquoter',
+		'title': 'Random Quoter',
+		'description': '<p>Web app that gets random quotes from the forismatic.com api and shows them in a simple minimalistic interface. </p> <p> It also allows to tweet the quote.</p> <p> It was built using Bootstrap and jQuery frameworks.</p>',
+		'link': 'greggocabral.github.io/randomquoter',
+		'img': ''
+	},
+	{
+		'id': 'weatherhere',
+		'title': 'The Weather Here',
+		'description': '',
+		'link': '',
+		'img': ''
+	},
+	{
+		'id': 'sentateadmin',
+		'title': 'Admin access for Sentate app',
+		'description': '',
+		'link': '',
+		'img': ''
+	},
+	{
+		'id': 'sentatepassenger',
+		'title': 'Passenger access for Sentate app',
+		'description': '',
+		'link': '',
+		'img': ''
+	},
+	{
+		'id': 'sentatedriver',
+		'title': 'Driver access for Sentate app',
+		'description': '',
+		'link': '',
+		'img': ''
+	},
+	{
+		'id': 'uluwatucraft',
+		'title': 'Uluwatu Craft',
+		'description': '',
+		'link': '',
+		'img': ''
+	},
+	{
 		'id': 'gregoriocabralme',
 		'title': 'Personal Website',
 		'description': '<p>Single page responsive static website, designed to display in an organized but minimalistic way, some of the projects I have been working on.</p> <p> Some of the technologies employed are HTML, CSS and jQuery. </p>  ',
@@ -69,4 +111,6 @@ var projects = [
 		'link': '',
 		'img': ''
 	}
+
+	
 ];
