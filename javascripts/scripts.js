@@ -9,9 +9,14 @@ function showProject(projectSelectedId){
 		});
 
 		$('#project-title').html(project[0].title);
-		if(project[0].img != undefined){
+		if(project[0].img != ""){
+			$('#img-col').addClass("col-sm-4 col-xs-10 offset-xs-1");
 			$('#project-img').html('<img class="project-img" src="'+project[0].img+'">');
-		} 
+		} else {
+			$('#img-col').removeClass("col-sm-4 col-xs-10 offset-xs-1");
+			$('#project-img').html('');
+		}
+
 		$('#project-description').html(project[0].description);
 
 		if(project[0].link != undefined){

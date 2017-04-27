@@ -9,7 +9,7 @@ var projects = [
 	{
 		'id': 'blumornadesayunoscom',
 		'title': 'Blumorna Desayunos',
-		'description': '<p>Single page responsive static website, developed for a small argentinean company that delivers homemade breakfasts.</p><p> The job involved helping the business owners to pick a name for the brand, designing their logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
+		'description': '<p>Single page responsive static website, developed for a small argentinean company that delivers homemade breakfasts.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
 		'link': 'blumornadesayunos.com',
 		'img': './img/blumornadesayunos.png'
 	},
@@ -23,7 +23,7 @@ var projects = [
 	{
 		'id': 'plansandbreakfastcom',
 		'title': 'Plans & Breakfast',
-		'description': '<p>Web app currently in construction, meant to deal with a personal need of a basic calendar with a comfortable panoramic view of multiple months at the same time, with a continuous smooth scroll between weeks. </p> <p> Some of the technologies employed are HTML, CSS, jQuery, NodeJS and MongoDB. </p>',
+		'description': "<p>Web app that meant to deal with a personal need of a basic calendar with a comfortable panoramic view of multiple months at the same time, with a continuous smooth scroll between weeks. </p> <p>Abandoned it when I found out that Trello's calendar does the job quite well.</p><p> Some of the technologies employed are HTML, CSS, jQuery, NodeJS and MongoDB. </p>",
 		'link': 'plansandbreakfast.com',
 		'img': './img/plansandbreakfast.png'
 	}, 
@@ -32,63 +32,56 @@ var projects = [
 		'title': 'Random Quoter',
 		'description': '<p>Web app that gets random quotes from the forismatic.com api and shows them in a simple minimalistic interface. </p> <p> It also allows to tweet the quote.</p> <p> It was built using Bootstrap and jQuery frameworks.</p>',
 		'link': 'greggocabral.github.io/randomquoter',
-		'img': ''
+		'img': './img/randomquoter.png'
 	},
 	{
 		'id': 'weatherhere',
-		'title': 'The Weather Here',
-		'description': '',
-		'link': '',
-		'img': ''
-	},
-	{
-		'id': 'sentateadmin',
-		'title': 'Admin access for Sentate app',
-		'description': '',
-		'link': '',
-		'img': ''
+		'title': 'Weather Here',
+		'description': '<p>Web app that gets the current location from the user and displays it, together with the weather in that place. It uses the darksky.net api. </p> <p> It also allows to change the temperature units.</p> <p> It was built using Bootstrap and jQuery frameworks.</p>',
+		'link': 'greggocabral.github.io/weatherhere',
+		'img': './img/weatherhere.png'
 	},
 	{
 		'id': 'sentatepassenger',
-		'title': 'Passenger access for Sentate app',
-		'description': '',
+		'title': 'Passenger access to Sentate platform',
+		'description': '<p>Hybrid mobile app developed for an argentinean startup to provide access to a ticket booking platform.</p><p> The technologies employed included Ionic v1 framework, NodeJS and MongoDB.</p>',
 		'link': '',
-		'img': ''
+		'img': './img/sentate-mobile.png'
 	},
 	{
-		'id': 'sentatedriver',
-		'title': 'Driver access for Sentate app',
-		'description': '',
-		'link': '',
-		'img': ''
+		'id': 'sentatecomar',
+		'title': 'Sentate',
+		'description': '<p>Minimalistic responsive contact landing page, developed for a argentinean startup.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
+		'link': 'sentate.com.ar',
+		'img': './img/sentate-web.png'
 	},
 	{
-		'id': 'uluwatucraft',
+		'id': 'uluwatucraftcom',
 		'title': 'Uluwatu Craft',
-		'description': '',
-		'link': '',
-		'img': ''
+		'description': '<p>Single page responsive static website, developed for a small argentinean company that designs and builds furniture and other industrial styled objects.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
+		'link': 'uluwatucraft.com',
+		'img': './img/uluwatucraft.png'
 	},
 	{
 		'id': 'gregoriocabralme',
 		'title': 'Personal Website',
 		'description': '<p>Single page responsive static website, designed to display in an organized but minimalistic way, some of the projects I have been working on.</p> <p> Some of the technologies employed are HTML, CSS and jQuery. </p>  ',
 		'link': 'gregoriocabral.me',
-		'img': ''
+		'img': './img/gregoriocabral.png'
 	}, 
 	{
 		'id': 'openfoamsolver',
 		'title': 'OpenFoam CFD Solver in AWS',
 		'description': '<p>The project consisted in setting up an AWS linux instance and installing an in-house solver in order to run CFD simulations in the cloud with 24 processors in parallel.</p>',
 		'link': '',
-		'img': ''
+		'img': './img/cfd.png'
 	}, 
 	{
 		'id': 'windturbinedesign',
 		'title': 'Structural design of composite wind turbine blades',
 		'description': '<p>As part of my mechanical engineering master thesis project, me and my thesis partner calculated a recommended material distribution ifor a wind turbine blade. Utilizing applied numerical methods, we simulated several loading conditions for various reinforcement configurations. We concluded in one feasible resistant structure, for which we provided the manufaturing blueprints and notes.</p>',
 		'link': '',
-		'img': ''
+		'img': './img/fem.png'
 	}, 
 	{
 		'id': 'campervandesign',
@@ -100,14 +93,14 @@ var projects = [
 	{
 		'id': 'happymondaytravel',
 		'title': 'Happy Monday Travel',
-		'description': '<p>Happy Monday Travel is a photography blog featuring my best travel photographs.</p>',
+		'description': '<p>Happy Monday Travel is a photography blog featuring my best travel photographs.</p> <p><a href="https://www.instagram.com/explore/tags/happymondaytravel/">#happymondaytravel</a></p> ',
 		'link': '',
-		'img': ''
+		'img': './img/happymonday.png'
 	}, 
 	{
 		'id': 'languagelearning',
 		'title': 'Language learning',
-		'description': '<p>Valpar.net is a time efficient language learning platform, targeting word prioritization, spaced repeticion method and fast feedback loops. </p> ',
+		'description': '<p>Valpar is a time efficient language learning platform, targeting word prioritization, spaced repetition method and fast feedback learning loops. </p> ',
 		'link': '',
 		'img': ''
 	}
