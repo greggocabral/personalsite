@@ -79,7 +79,7 @@ var projects = [
 	{
 		'id': 'windturbinedesign',
 		'title': 'Structural design of composite wind turbine blades',
-		'description': '<p>As part of my mechanical engineering master thesis project, me and my thesis partner calculated a recommended material distribution ifor a wind turbine blade.</p> <p>Utilizing applied numerical methods, we simulated several loading conditions for various reinforcement configurations.</p><p>We used commercial solvers to run the main calculations, but we developed in-house pre and post-processing tools in MATLAB to complete our analysis </p> <p>We concluded in one feasible resistant structure, for which we provided the manufaturing blueprints and notes.</p>',
+		'description': '<p>As part of my mechanical engineering master thesis project, me and my thesis partner calculated a recommended material distribution for a composite wind turbine blade.</p> <p>Utilizing applied numerical methods, we simulated several loading conditions for various reinforcement configurations.</p><p>We used commercial solvers to run the main calculations, but we developed in-house pre and post-processing tools in MATLAB to complete our analysis </p> <p>We concluded in one feasible resistant structure, for which we provided the manufaturing blueprints and notes.</p>',
 		'link': '',
 		'img': './img/fem.png'
 	}, 
